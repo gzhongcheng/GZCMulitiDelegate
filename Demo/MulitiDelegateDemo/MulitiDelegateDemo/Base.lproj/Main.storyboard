@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uhv-6w-mw5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="f9q-VY-6lk">
+            <objects>
+                <navigationController id="uhv-6w-mw5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Zv-Rg-glH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PpT-c2-FqX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wKw-Gs-pld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-873" y="133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0N3-sU-Rua">
+                                <rect key="frame" x="126" y="462.5" width="123" height="30"/>
+                                <state key="normal" title="点我改变主题颜色"/>
+                                <connections>
+                                    <action selector="changeThemes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajK-pT-g6G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klt-bl-JTZ">
+                                <rect key="frame" x="133.5" y="521.5" width="108" height="30"/>
+                                <state key="normal" title="点我进入下一页"/>
+                                <connections>
+                                    <action selector="nextVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jMh-0E-mXu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQA-rF-kyB">
+                                <rect key="frame" x="141.5" y="350.5" width="92" height="30"/>
+                                <state key="normal" title="点我获取进度"/>
+                                <connections>
+                                    <action selector="getProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CqA-pC-2vg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里显示进度哦" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7an-2i-pQs">
+                                <rect key="frame" x="127" y="321.5" width="121.5" height="20.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Klt-bl-JTZ" firstAttribute="top" secondItem="0N3-sU-Rua" secondAttribute="bottom" constant="29" id="1AX-P0-Dcr"/>
+                            <constraint firstItem="BQA-rF-kyB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="70K-Ih-VCH"/>
+                            <constraint firstItem="7an-2i-pQs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="C5Q-u6-kis"/>
+                            <constraint firstItem="Klt-bl-JTZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="C8g-4g-Y9b"/>
+                            <constraint firstItem="0N3-sU-Rua" firstAttribute="top" secondItem="BQA-rF-kyB" secondAttribute="bottom" constant="82" id="jsh-XQ-fM2"/>
+                            <constraint firstItem="0N3-sU-Rua" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="m0O-D3-T5P"/>
+                            <constraint firstItem="BQA-rF-kyB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mYn-w0-caI"/>
+                            <constraint firstItem="BQA-rF-kyB" firstAttribute="top" secondItem="7an-2i-pQs" secondAttribute="bottom" constant="8.5" id="vcu-og-TmO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MkI-PR-o46"/>
+                    <connections>
+                        <outlet property="progressLabel" destination="7an-2i-pQs" id="UWB-SP-MtO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
