@@ -1,0 +1,16 @@
+PODS:
+  - GZCMulitiDelegate (0.0.1)
+
+DEPENDENCIES:
+  - GZCMulitiDelegate
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GZCMulitiDelegate
+
+SPEC CHECKSUMS:
+  GZCMulitiDelegate: 530bababc1e0a6871bc5222a7e3a258acdd3d6bf
+
+PODFILE CHECKSUM: 7ec44fd2a7f0531932d50d5a71e9bb9c453b8442
+
+COCOAPODS: 1.5.3
